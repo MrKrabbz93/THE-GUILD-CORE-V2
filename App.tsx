@@ -16,7 +16,7 @@ import * as THREE from 'three'; // For IDYr's 3D background
 
 // --- Global Constants & Types ---
 const GEMINI_API_KEY = 'YOUR_GEMINI_API_KEY_HERE'; // !!! REPLACE WITH YOUR ACTUAL API KEY !!!
-const API_MODEL = 'gemini-2.5-flash-preview-09-2025'; // Or 'gemini-1.5-flash' for production stable
+const API_MODEL = 'gemini3pro'; // Or 'gemini-1.5-flash' for production stable
 
 type Priority = 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';
 type Status = 'PENDING' | 'IN_PROGRESS' | 'BLOCKED' | 'COMPLETED';
