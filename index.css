@@ -1,0 +1,47 @@
+/* index.css – Minimal global styles (Tailwind + custom overrides) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  background: #050a14;
+  color: #e2e8f0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Your custom classes from index.html */
+.glass-panel {
+  background: rgba(10, 17, 32, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.neon-border {
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.1), inset 0 0 5px rgba(0, 200, 255, 0.05);
+}
+
+/* Custom scrollbar (already in html, but safe duplicate) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050a14; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b; 
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155; 
+}
